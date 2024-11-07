@@ -147,14 +147,14 @@ const cutString = function (str) {
     return str.slice(1, str.length - 1)
   }
   console.log(cutString('EPICODE'))
-  const giveMeRandom = function (n) {
+  const giveMeRandomm = function (n) {
     const arr = []
     for (let i = 0; i < n; i++) {
       arr.push(Math.floor(Math.random() * 10))
     }
     return arr
   }
-  console.log(giveMeRandom(5))
+  console.log(giveMeRandomm(5))
 
 /* console.log("------ES 8------");
 function cutString (myString) {

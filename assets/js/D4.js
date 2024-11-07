@@ -134,7 +134,15 @@ function upperFirst(myString) {
         result.push(final);
     }
     console.log(result.join(' '));
-} console.log(upperFirst('ciao sono camilla'));
+} 
+    /* function upperFirst(str) {
+        return str
+          .split(' ')                      
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1)) 
+          .join(' ');                      
+      }
+      */
+console.log(upperFirst('ciao sono camilla'));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere

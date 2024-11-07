@@ -35,9 +35,9 @@ console.log(crazySum(0, 0));
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("------ES 3------");
 
-function crazyDiff(num1, num2 = 19) {
-  let differenza = num1 - num2;
-  console.log(Math.abs(differenza));
+function crazyDiff(num1) {
+    const num2 = 19;
+  const differenza = num1 - num2;
   if (num1 > 19) {
     return differenza * 3;
   } else {
@@ -112,10 +112,7 @@ console.log(check3and7(77));
 console.log("------ES 7------");
 
 function reverseString(myString) {
-    const splitWord = myString.split('');
-    return splitWord;
-    const reverseWord = splitWord.reverse(splitWord);
-    return reverseWord;
+    return myString.split('').reverse().join('');
 } console.log(reverseString('Camilla'))
 
 /* ESERCIZIO 8
@@ -127,8 +124,16 @@ function reverseString(myString) {
 console.log("------ES 8------");
 
 function upperFirst(myString) {
-    myString = myString.toUpperCase();
-    return myString;
+    let words = myString.split(' ');
+    let result = [];
+    for (let i = 0; i < words.lenght; i++) {
+        let first = words[i].charAt(0);
+        let firstUpper = first.toUppercase();
+        let cut = words[i].slice(1);
+        let final = firstUpper + cut;
+        result.push(final);
+    }
+    console.log(result.join(' '));
 } console.log(upperFirst('ciao sono camilla'));
 
 /* ESERCIZIO 9
@@ -137,8 +142,10 @@ function upperFirst(myString) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log("------ES 8------");
-
+/* console.log("------ES 8------");
+function cutString (myString) {
+    const myString = myString.su
+} console.log(cutString('questa è la mia stringa'))
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.

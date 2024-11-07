@@ -88,6 +88,16 @@ console.log(epify("epicode è bello"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("------ES 6------");
+
+function check3and7(num1) {
+  if (num1 % 3 === 0 || num1 % 7 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(check3and7(2));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")

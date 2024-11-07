@@ -70,6 +70,17 @@ console.log(boundary(22));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("------ES 5------");
+
+function epify(myString) {
+  const position = myString.indexOf("EPICODE");
+  if (position < 0) {
+    return "EPICODE" + myString;
+  } else {
+    return myString;
+  }
+}
+console.log(epify("epicode è bello"));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo

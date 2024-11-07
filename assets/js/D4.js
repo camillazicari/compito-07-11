@@ -35,15 +35,16 @@ console.log(crazySum(0, 0));
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("------ES 3------");
 
-function crazyDiff(num1, num2=19) {
-    let differenza = num1-num2;
-    console.log(Math.abs(differenza));
-    if (num1>19) {
-        return differenza*3;
-    } else {
-        return Math.abs(differenza);
-    }
-} console.log(crazyDiff(23));
+function crazyDiff(num1, num2 = 19) {
+  let differenza = num1 - num2;
+  console.log(Math.abs(differenza));
+  if (num1 > 19) {
+    return differenza * 3;
+  } else {
+    return Math.abs(differenza);
+  }
+}
+console.log(crazyDiff(23));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -51,6 +52,16 @@ function crazyDiff(num1, num2=19) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("------ES 4------");
+
+function boundary(n) {
+  if ((n >= 20 && n <= 100) || n === 400) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(boundary(22));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.

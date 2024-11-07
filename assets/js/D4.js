@@ -91,19 +91,32 @@ console.log(epify("epicode è bello"));
 console.log("------ES 6------");
 
 function check3and7(num1) {
-  if (num1 % 3 === 0 || num1 % 7 === 0) {
-    return true;
-  } else {
+  if (num1 <= 0) {
     return false;
+  } else {
+    if (num1 % 3 === 0 || num1 % 7 === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
   }
 }
-console.log(check3and7(2));
+console.log(check3and7(77));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("------ES 7------");
+
+function reverseString(myString) {
+    const splitWord = myString.split('');
+    return splitWord;
+    const reverseWord = splitWord.reverse(splitWord);
+    return reverseWord;
+} console.log(reverseString('Camilla'))
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -111,6 +124,12 @@ console.log(check3and7(2));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("------ES 8------");
+
+function upperFirst(myString) {
+    myString = myString.toUpperCase();
+    return myString;
+} console.log(upperFirst('ciao sono camilla'));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -118,6 +137,8 @@ console.log(check3and7(2));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("------ES 8------");
+
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.

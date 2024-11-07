@@ -17,6 +17,7 @@ console.log(area(7, 9));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("------ES 2------");
+
 function crazySum(num1, num2) {
   if (num1 != num2) {
     return num1 + num2;
@@ -32,6 +33,17 @@ console.log(crazySum(0, 0));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("------ES 3------");
+
+function crazyDiff(num1, num2=19) {
+    let differenza = num1-num2;
+    console.log(Math.abs(differenza));
+    if (num1>19) {
+        return differenza*3;
+    } else {
+        return Math.abs(differenza);
+    }
+} console.log(crazyDiff(23));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
